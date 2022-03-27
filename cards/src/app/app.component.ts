@@ -1,6 +1,7 @@
 import { CardsService } from './service/cards.service';
 import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/models/card.model';
+// import {FormControl,FormGroup,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,21 @@ import { Card } from 'src/models/card.model';
 })
 export class AppComponent implements OnInit {
   title = 'cards';
+
+  //FormValidation
+  // cardForm = new FormGroup({
+  //   cardName:new FormControl('',Validators.required),
+  //   cardNumber:new FormControl('',Validators.required),
+  //   cvc:new FormControl('',Validators.required),
+  //   expiryMonth:new FormControl('',Validators.required),
+  //   expiryYear:new FormControl('',Validators.required),
+  // })
+  // get cardName(){return this.cardForm.get('cardName')}
+  // get cardNumber(){return this.cardForm.get('cardNumber')}
+  // get cvc(){return this.cardForm.get('cvc')}
+  // get expiryMonth(){return this.cardForm.get('expiryMonth')}
+  // get expiryYear(){return this.cardForm.get('expiryYear')}
+
   cards: Card[] = [];
   button="Save";
   card:Card={
